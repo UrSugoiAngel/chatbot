@@ -43,6 +43,8 @@ public class Main {
 
             frame.setVisible(true);
 
+            textField.requestFocus();
+
             // BlockingQueue to synchronize user inputs
             BlockingQueue<String> inputQueue = new LinkedBlockingQueue<>();
 
