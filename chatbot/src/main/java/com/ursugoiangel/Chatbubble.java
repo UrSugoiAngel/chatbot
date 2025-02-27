@@ -19,6 +19,8 @@ public class Chatbubble extends JPanel {
     private static final int SHADOW_OFFSET = 3;
     private static final int ARC = 20;
 
+    private static final double DARKER_FACTOR = 0.85;
+
     public Chatbubble(String text, boolean isUser) {
         this.text = text;
         this.isUser = isUser;
@@ -122,9 +124,9 @@ public class Chatbubble extends JPanel {
      * Returns a slightly darker version of the color to create a subtle gradient effect.
      */
     private Color getSubtleDarker(Color c) {
-        int r = (int) (c.getRed() * 0.95);
-        int g = (int) (c.getGreen() * 0.95);
-        int b = (int) (c.getBlue() * 0.95);
+        int r = (int) (c.getRed() * DARKER_FACTOR);
+        int g = (int) (c.getGreen() * DARKER_FACTOR);
+        int b = (int) (c.getBlue() * DARKER_FACTOR);
         return new Color(r, g, b);
     }
 

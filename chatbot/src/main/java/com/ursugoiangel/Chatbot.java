@@ -147,7 +147,7 @@ public class Chatbot {
                     } else {
                         response = "You should try Linux Mint!";
                     }
-                } else if(answers[2] == 0) {
+                } else if(answers[2] == 1) {
                     response = "You should try Zorin OS!";
                 } else {
                     if(answers[3] == 1) {
